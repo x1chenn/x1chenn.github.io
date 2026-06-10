@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S.E. in Computer Science @ <a href='https://www.jhu.edu/'>Johns Hopkins University</a> · Machine Learning & Reinforcement Learning
+subtitle: M.S.E. in Computer Science @ <a href='https://www.jhu.edu/'>Johns Hopkins University</a> | Machine Learning & Reinforcement Learning
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
     <p>Johns Hopkins University</p>
     <p>Baltimore, MD, USA</p>
 
-selected_papers: false # I have no publications yet — research projects are listed in the body instead
+selected_papers: false # I have no publications yet; research projects are listed in the body instead
 social: true # includes social icons at the bottom of the page
 
 announcements:
