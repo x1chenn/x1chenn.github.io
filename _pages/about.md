@@ -27,7 +27,7 @@ latest_posts:
   limit: 3
 ---
 
-Hi! I'm **Xi Chen (陈希)**, a first-year **M.S.E. student in Computer Science** at **Johns Hopkins University**, where I work in the [ARCADE Lab](https://arcade.cs.jhu.edu/) with Dr. Lalithkumar Seenivasan and collaborate with Prof. Laixi Shi and Prof. Jianyi Yang on robust reinforcement learning. Before JHU, I received my B.Eng. in Computer Science from **Nankai University**.
+Hi! I'm **Xi Chen (陈希)**, a first-year **M.S.E. student in Computer Science** at **Johns Hopkins University**. I am advised by Prof. Laixi Shi and collaborate closely with Prof. Jianyi Yang on robust reinforcement learning, world models, and generative methods for sequential decision making. I also collaborate with researchers in the ARCADE Lab on medical AI and computer vision projects. Before JHU, I received my B.Eng. in Computer Science from **Nankai University**.
 
 I am broadly interested in **decision-making and perception for embodied agents**, and I am **applying for a Ph.D.** to pursue this direction. My current research focuses on:
 
