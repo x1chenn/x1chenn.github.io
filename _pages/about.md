@@ -27,13 +27,13 @@ latest_posts:
   limit: 3
 ---
 
-Hi! I'm **Xi Chen (陈希)**, a second-year **M.S.E. student in Computer Science** at **Johns Hopkins University**. I am fortunate to be advised by [Prof. Laixi Shi](https://laixishi.github.io/index.html)! I also work closely with Prof. Jianyi Yang on generative world models for robust offline RL, and with Dr. Lalithkumar Seenivasan in the ARCADE Lab on perception for surgical robots. Before JHU, I received my B.Eng. in Computer Science from **Nankai University**.
+Hi! I'm **Xi Chen (陈希)**, a second-year **M.S.E. student in Computer Science** at **Johns Hopkins University**. I am fortunate to be advised by [Prof. Laixi Shi](https://laixishi.github.io/index.html)! Before JHU, I received my B.Eng. in Computer Science from **Nankai University**.
 
 I want to build decision-making agents that keep working when deployment differs from training, and I am **applying for a Ph.D.** to pursue this direction. My research focuses on:
 
-- 🛡️ **Robust reinforcement learning** — Algorithms and benchmarks for policies that survive deployment uncertainty: shifts in dynamics, observations, actions, rewards, control latency and scene semantics. I lead a unified library and benchmark that trains and evaluates robust online, offline and safe RL algorithms under one train–disrupt–evaluate protocol, so that each robustness mechanism can be matched to the channel it actually defends.
-- 🤖 **Robot learning** — Carrying robust RL from standard control to real robotic stacks: humanoid locomotion and manipulation in Isaac Lab, frozen vision–language–action policies under sim-to-real shift, and reliable perception (point tracking) for surgical robots, where the perception backbone, the world model and the policy must hold up together.
-- 🌍 **Generative world models for RL** — Flow-matching and diffusion models as trajectory-level world models: multi-step value expansion for offline RL without compounding one-step error, and generative uncertainty sets whose adversarial fine-tuning yields distributionally robust policies against diverse yet plausible dynamics shifts.
+- 🛡️ **Robust reinforcement learning** — Policies that keep working at deployment: algorithms robust to dynamics shift and other perturbations (observation, action, reward, latency, semantics), and benchmarks that measure such robustness fairly.
+- 🤖 **Robot learning** — Training policies for robotics and humanoid tasks in simulation and closing the sim-to-real gap.
+- 🌍 **Generative world models for RL** — Generative models that imagine multi-step futures, used as data augmentation to train policies that are robust to shifted dynamics.
 
 Earlier work spans time-series learning, generative modeling and computer vision. I enjoy problems where robust decision-making meets real deployment constraints.
 
@@ -54,14 +54,14 @@ An algorithm-centric library and benchmark for robust RL under deployment uncert
 
 **Generative Uncertainty Modeling for Distributionally Robust Offline RL** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span>
 
-_Johns Hopkins University — with Prof. Laixi Shi, Prof. Jianyi Yang, and Jiaqi Wen_
+_Johns Hopkins University — with Prof. Laixi Shi and collaborators_
 
 A robust offline-RL framework that builds the uncertainty set from a **conditional flow model** instead of a rectangular, divergence-ball set: shared flow parameters couple shifts across state–action pairs, and the **flow-matching loss** serves as the discrepancy measure, which provably implies a Wasserstein-2 bound. The flow model is **adversarially fine-tuned** against the current policy with an inverse-propensity-weighted, PPO-style objective under the flow-matching constraint, and the generated adverse _H_-step trajectories become conservative critic targets for IQL, CQL or BCQ backbones. On MuJoCo dynamics shifts and an EPANET water-distribution-network control case study it improves OOD scores without sacrificing nominal performance.
 <span style="color: var(--global-text-color-light)">_Under review._</span>
 
 **Point Tracking for Bronchoscopy via Adjacent-Frame Correlation** &nbsp; <span style="color: var(--global-text-color-light)">· Feb 2026 – Present</span>
 
-_ARCADE Lab, Johns Hopkins University — with Dr. Lalithkumar Seenivasan_
+_ARCADE Lab, Johns Hopkins University_
 
 An AllTracker-style tracker adapted to bronchoscopy, where textureless airway walls, illumination shifts, and specular reflections break long-range query-anchored matching. An **adjacent-frame correlation** module estimates and chains frame-to-frame optical flow for robust tracking, distilled (Transformer teacher → lightweight CNN student with D2-Net-style features) for real-time deployment at **< 30 ms latency**.
 <span style="color: var(--global-text-color-light)">_Manuscript in preparation._</span>

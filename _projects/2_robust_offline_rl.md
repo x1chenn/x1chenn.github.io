@@ -6,7 +6,7 @@ importance: 2
 category: research
 ---
 
-**Johns Hopkins University — with Prof. Laixi Shi, Prof. Jianyi Yang, and Jiaqi Wen · Apr 2026 – Present**
+**Johns Hopkins University — with Prof. Laixi Shi and collaborators · Apr 2026 – Present**
 
 - Replaces rectangular, divergence-ball uncertainty sets with a **generative uncertainty set** defined in the parameter space of a conditional flow model, so that shared parameters couple dynamics shifts across state–action pairs (non-rectangular, diverse yet plausible shifts).
 - The **flow-matching loss** is the discrepancy measure: simulation-free and cheap to optimize, and it provably implies a Wasserstein-2 bound on the induced trajectory distribution.

@@ -6,7 +6,7 @@ importance: 3
 category: research
 ---
 
-**ARCADE Lab, Johns Hopkins University — with Dr. Lalithkumar Seenivasan · Feb 2026 – Present**
+**ARCADE Lab, Johns Hopkins University · Feb 2026 – Present**
 
 - Adapting an AllTracker-style point tracker to bronchoscopy, where textureless airway walls, illumination changes, and specular reflections break long-range query-anchored matching.
 - Introducing an **adjacent-frame correlation** module that estimates frame-to-frame optical flow and chains it for robust long-horizon trajectory tracking.
