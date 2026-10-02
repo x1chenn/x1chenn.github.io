@@ -386,14 +386,25 @@ ninja.data = [{
           section: "News",},{id: "news-started-a-new-project-on-adversarial-finetuning-of-generative-world-models-for-distributionally-robust-offline-rl-with-prof-laixi-shi-and-prof-jianyi-yang",
           title: 'Started a new project on adversarial finetuning of generative world models for distributionally...',
           description: "",
-          section: "News",},{id: "projects-point-tracking-for-bronchoscopy",
+          section: "News",},{id: "news-started-building-a-robust-rl-library-and-benchmark-with-prof-laixi-shi-one-library-one-shift-toolbox-and-one-evaluation-protocol-for-robust-online-offline-and-safe-rl-from-mujoco-to-isaac-lab-and-vla-policies",
+          title: 'Started building a robust RL library and benchmark with Prof. Laixi Shi: one...',
+          description: "",
+          section: "News",},{id: "news-two-papers-submitted-a-unified-library-and-benchmark-for-robust-rl-algorithms-and-generative-uncertainty-modeling-for-distributionally-robust-offline-rl-both-under-review",
+          title: 'Two papers submitted: a unified library and benchmark for robust RL algorithms, and...',
+          description: "",
+          section: "News",},{id: "projects-robust-rl-library-and-benchmark",
+          title: 'Robust RL Library and Benchmark',
+          description: "A unified library and benchmark for robust reinforcement learning algorithms under deployment uncertainty.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/0_robust_rl_library/";
+            },},{id: "projects-point-tracking-for-bronchoscopy",
           title: 'Point Tracking for Bronchoscopy',
           description: "Adjacent-frame correlation for robust point tracking in low-texture, high-glare airway video.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_bronchoscopy_tracking/";
-            },},{id: "projects-generative-world-models-for-robust-offline-rl",
-          title: 'Generative World Models for Robust Offline RL',
-          description: "Flow-matching trajectory generation with distributionally robust optimization under dynamics shift.",
+            },},{id: "projects-generative-uncertainty-modeling-for-robust-offline-rl",
+          title: 'Generative Uncertainty Modeling for Robust Offline RL',
+          description: "Flow-based generative uncertainty sets, adversarially fine-tuned, for distributionally robust offline RL.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_robust_offline_rl/";
             },},{id: "projects-backdoor-attacks-on-time-series-forecasting",
