@@ -2,7 +2,7 @@
 layout: page
 title: Transformer Video Sign-Language Recognition
 description: Transformer-based continuous sign-language recognition and translation from video streams.
-importance: 4
+importance: 5
 category: research
 ---
 

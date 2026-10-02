@@ -2,7 +2,7 @@
 layout: page
 title: Point Tracking for Bronchoscopy
 description: Adjacent-frame correlation for robust point tracking in low-texture, high-glare airway video.
-importance: 1
+importance: 3
 category: research
 ---
 

@@ -2,7 +2,7 @@
 layout: page
 title: Hybrid Defect Detection for Ceramic Tiles
 description: Tiny-defect detection on ultra-high-resolution industrial images with an improved YOLOv8.
-importance: 5
+importance: 6
 category: research
 ---
 
