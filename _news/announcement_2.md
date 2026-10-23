@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined the **ARCADE Lab** at Johns Hopkins University to work on a track-any-point foundation model for endoscopic scenes.
+Started a **point-tracking project** with the **ARCADE Lab** at Johns Hopkins University, building a track-any-point foundation model for endoscopic scenes.

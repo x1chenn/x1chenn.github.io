@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S.E. in Computer Science @ <a href='https://www.jhu.edu/'>Johns Hopkins University</a> | Robust RL · Robot Learning · Generative World Models
+subtitle: M.S.E. in Computer Science @ <a href='https://www.jhu.edu/'>Johns Hopkins University</a> | Robust RL · Robot Learning · Generative Models
 
 profile:
   align: right
@@ -29,13 +29,13 @@ latest_posts:
 
 Hi! I'm **Xi Chen (陈希)**, a second-year **M.S.E. student in Computer Science** at **Johns Hopkins University**. I am fortunate to be advised by [Prof. Laixi Shi](https://laixishi.github.io/index.html)! Before JHU, I received my B.Eng. in Computer Science from **Nankai University**.
 
-I want to build decision-making agents that keep working when deployment differs from training, and I am **applying for a Ph.D.** to pursue this direction. My research focuses on:
+My research aims to build capable agents that make **robust decisions in the real world and on frontier tasks**, where deployment rarely looks like training. I approach this along three directions:
 
-- 🛡️ **Robust reinforcement learning** — Policies that keep working at deployment: algorithms robust to dynamics shift and other perturbations (observation, action, reward, latency, semantics), and benchmarks that measure such robustness fairly.
-- 🤖 **Robot learning** — Training policies for robotics and humanoid tasks in simulation and closing the sim-to-real gap.
-- 🌍 **Generative world models for RL** — Generative models that imagine multi-step futures, used as data augmentation to train policies that are robust to shifted dynamics.
+1. 🛡️ **Robust reinforcement learning** — algorithms that keep policies reliable under shifts in dynamics, observations, actions, rewards, latency and task semantics, and benchmarks that measure such robustness fairly.
+2. 🌍 **Generative models for decision-making** — generative models that represent plausible uncertainty and synthesize experience, so that agents learn from limited data and prepare for the futures they may face.
+3. 🤖 **Embodied and multi-agent systems** — carrying these methods to robot learning and sim-to-real transfer, and to LLM-based multi-agent systems that must cooperate reliably with each other and with people.
 
-Earlier work spans time-series learning, generative modeling and computer vision. I enjoy problems where robust decision-making meets real deployment constraints.
+Earlier work spans time-series learning, generative modeling and computer vision. I am **applying for a Ph.D.** to pursue this agenda, and I'm always happy to connect — feel free to reach out about research or collaborations.
 
 ---
 
@@ -45,29 +45,29 @@ Earlier work spans time-series learning, generative modeling and computer vision
 
 ## selected research projects
 
-**A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms** &nbsp; <span style="color: var(--global-text-color-light)">· 2026 – Present</span>
+**RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span>
 
 _Johns Hopkins University — with Prof. Laixi Shi and collaborators_
 
-An algorithm-centric library and benchmark for robust RL under deployment uncertainty. It integrates **22 algorithms** (6 standard, 16 robust online, offline and safe), organizes them by mechanism and claimed uncertainty, and evaluates every frozen policy under one protocol on a **shift toolbox of six sources** (dynamics, observation, action, reward/cost, latency, semantic) with several modes and their compositions, across hundreds of perturbation configurations. The same interface runs on advanced robotic tasks — humanoid and manipulation in Isaac Lab and a frozen vision–language–action policy — to mimic the sim-to-real gap. The findings: robustness is channel-specific, and what a mechanism models is what it defends.
+An algorithm-centric library and benchmark for robust RL under deployment uncertainty. It integrates **22 algorithms** (6 standard, 16 robust online, offline and safe), organizes them by mechanism and claimed uncertainty, and evaluates every frozen policy under one protocol on a **shift toolbox of six sources** (dynamics, observation, action, reward/cost, latency, semantic) with several modes and their compositions, across hundreds of perturbation configurations. The same interface runs on advanced robotic tasks — humanoid and manipulation in Isaac Lab and a frozen vision–language–action policy — to mimic the sim-to-real gap. The findings: robustness is channel-specific, and a method's claimed channel does not fully predict where it is strongest.
 <span style="color: var(--global-text-color-light)">_Under review. Library and project website to be released after the review period._</span>
 
-**Generative Uncertainty Modeling for Distributionally Robust Offline RL** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span>
+**Leveraging Generative Uncertainty Modeling for Distributionally Robust Offline Reinforcement Learning** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span>
 
 _Johns Hopkins University — with Prof. Laixi Shi and collaborators_
 
-A robust offline-RL framework that builds the uncertainty set from a **conditional flow model** instead of a rectangular, divergence-ball set: shared flow parameters couple shifts across state–action pairs, and the **flow-matching loss** serves as the discrepancy measure, which provably implies a Wasserstein-2 bound. The flow model is **adversarially fine-tuned** against the current policy with an inverse-propensity-weighted, PPO-style objective under the flow-matching constraint, and the generated adverse _H_-step trajectories become conservative critic targets for IQL, CQL or BCQ backbones. On MuJoCo dynamics shifts and an EPANET water-distribution-network control case study it improves OOD scores without sacrificing nominal performance.
+A robust offline-RL framework that builds the uncertainty set from a **conditional flow model** instead of a rectangular, divergence-ball set: shared flow parameters couple shifts across state–action pairs, and the **flow-matching loss** serves as the discrepancy measure, which provably implies a Wasserstein-2 bound. The flow model is **adversarially fine-tuned** against the current policy with an inverse-propensity-weighted, PPO-style objective under the flow-matching constraint, and the generated adverse _H_-step trajectories become conservative critic targets for IQL, CQL or BCQ backbones. It achieves the best OOD score across six MuJoCo task–dataset settings, exceeding the strongest baseline by **6.7 normalized points**, with gains across all three backbones and on an EPANET water-distribution-network control case study.
 <span style="color: var(--global-text-color-light)">_Under review._</span>
 
-**Point Tracking for Bronchoscopy via Adjacent-Frame Correlation** &nbsp; <span style="color: var(--global-text-color-light)">· Feb 2026 – Present</span>
+**Track-Any-Point Foundation Model for Endoscopic Scenes** &nbsp; <span style="color: var(--global-text-color-light)">· Feb 2026 – Present</span>
 
-_ARCADE Lab, Johns Hopkins University_
+_ARCADE Lab, Johns Hopkins University — with Dr. Lalithkumar Seenivasan_
 
-An AllTracker-style tracker adapted to bronchoscopy, where textureless airway walls, illumination shifts, and specular reflections break long-range query-anchored matching. An **adjacent-frame correlation** module estimates and chains frame-to-frame optical flow for robust tracking, distilled (Transformer teacher → lightweight CNN student with D2-Net-style features) for real-time deployment at **< 30 ms latency**.
+A track-any-point model for endoscopic and bronchoscopic navigation, where textureless anatomy, specular reflections, tissue deformation, occlusion and rapid camera motion break existing trackers. It extends AllTracker with a **dual-correlation** design that fuses long-range anchor correspondence with flow-aligned adjacent-frame matching (**91.9% δ<sub>avg</sub>**, above the anchor-only baseline), and a cosine-gated **feature memory** that cuts invisible-point loss by ~9% for recovery from occlusion and re-entry. Sliding-window inference with feature reuse runs in real time (~120–156 fps, ~0.4 GB memory).
 <span style="color: var(--global-text-color-light)">_Manuscript in preparation._</span>
 
-**Backdoor Attacks on Multivariate Time-Series Forecasting** &nbsp; <span style="color: var(--global-text-color-light)">· Dec 2024 – May 2025</span>
+**Backdoor Attacks on Multivariate Time Series Forecasting with Missing Values** &nbsp; <span style="color: var(--global-text-color-light)">· Dec 2024 – May 2025</span>
 
 _Undergraduate thesis, DBIS Lab, Nankai University — with Dr. Xiangrui Cai_
 
-A stealthy backdoor-attack framework for multivariate forecasting under realistic missing-value scenarios: invisible triggers at missing-value positions plus a critical-time-step imputation strategy preserve stealth while cutting attack MAE by **43%** versus baselines.
+A backdoor-attack framework for multivariate forecasting under realistic missing-value scenarios, where prior attacks assume complete inputs: a critical-time-step-guided imputation strategy and dynamic trigger placement (missing-value density, prediction sensitivity, local volatility) balance effectiveness and stealth, giving **17–43%** relative improvement over baseline attack strategies on PeMS traffic datasets.
