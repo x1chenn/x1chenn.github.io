@@ -34,7 +34,7 @@ latest_posts:
 
 Hi! I'm **Xi Chen (陈希)**, a second-year **M.S.E. student in Computer Science** at **Johns Hopkins University**. I am fortunate to be advised by [Prof. Laixi Shi](https://laixishi.github.io/index.html)! Before JHU, I received my B.Eng. in Computer Science from **Nankai University**.
 
-My research aims to build agents that make **reliable decisions in the real world and on frontier tasks**, where deployment rarely matches training. I work along two lines:
+My research aims to build agents that make **reliable decisions in real-world tasks**. I work along two lines:
 
 1. **Robust Optimization** — Robust reinforcement learning and generative modeling for reliable decision-making under uncertainty and distribution shifts.
 2. **Systems for Self-Evolving Agents** — Adaptive and autonomous learning systems for multi-agent intelligence and robotics, with robot policies that transfer from simulation to the real world.
