@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: M.S.E. in Computer Science @ <a href='https://www.jhu.edu/'>Johns Hopkins University</a> | Robust RL · Robot Learning · Generative Models
+subtitle: M.S.E. in Computer Science @ <a href='https://www.jhu.edu/'>Johns Hopkins University</a> | Robust RL · Generative Models · Self-Evolving Agents · Robot Learning
 
 profile:
   align: right
