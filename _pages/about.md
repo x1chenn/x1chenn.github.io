@@ -12,14 +12,14 @@ profile:
     <p>Department of Computer Science</p>
     <p>Johns Hopkins University</p>
     <p>Baltimore, MD, USA</p>
-    <p style="margin-top: 0.6em; font-size: 1.25em;">
-      <a href="mailto:xchen336@jh.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>&nbsp;&nbsp;
-      <a href="https://github.com/x1chenn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>&nbsp;&nbsp;
+    <div style="display: flex; justify-content: center; gap: 1.6em; margin-top: 0.6em; font-size: 1.3em;">
+      <a href="mailto:xchen336@jh.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/x1chenn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/xi-chen-jhucs" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
-    </p>
+    </div>
 
 selected_papers: false # I have no publications yet; research projects are listed in the body instead
-social: true # includes social icons at the bottom of the page
+social: false # contact icons sit under the profile photo instead
 
 announcements:
   enabled: false # rendered manually in the body, above the research projects
