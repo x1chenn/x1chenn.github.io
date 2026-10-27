@@ -49,8 +49,8 @@ I am **applying for a Ph.D.** to pursue this agenda, and I'm always happy to con
 
 ## selected research projects
 
-**RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span><br>
-_Project lead, Johns Hopkins University — with Prof. Laixi Shi_ · [Project page](https://robustrl-lib.github.io/) · [GitHub](https://github.com/robustrl-lib/robustrllib)
+**[RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms](https://arxiv.org/abs/2610.32971)** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span><br>
+_First author and project lead, Johns Hopkins University — with Prof. Laixi Shi_ · [arXiv](https://arxiv.org/abs/2610.32971) · [Project page](https://robustrl-lib.github.io/) · [GitHub](https://github.com/robustrl-lib/robustrllib)
 
 - **Algorithm library**: 17 robust online, offline and safe RL algorithms plus 6 standard baselines under one unified interface, organized by algorithm feature, claimed target shift and base algorithm.
 - **Disruptor toolbox**: six shift sources (MDP elements, latency, semantics) and five shift modes (stochastic, adversarial, parametric, non-stationary, composition), isolated or compound.
