@@ -47,15 +47,11 @@ I am **applying for a Ph.D.** to pursue this agenda, and I'm always happy to con
 
 {% include news.liquid limit=true %}
 
+## selected publications
+
+{% include selected_papers.liquid %}
+
 ## selected research projects
-
-**[RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms](https://arxiv.org/abs/2610.32971)** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span><br>
-_First author and project lead, Johns Hopkins University — with Prof. Laixi Shi_ · [arXiv](https://arxiv.org/abs/2610.32971) · [Project page](https://robustrl-lib.github.io/) · [GitHub](https://github.com/robustrl-lib/robustrllib)
-
-- **Algorithm library**: 17 robust online, offline and safe RL algorithms plus 6 standard baselines under one unified interface, organized by algorithm feature, claimed target shift and base algorithm.
-- **Disruptor toolbox**: six shift sources (MDP elements, latency, semantics) and five shift modes (stochastic, adversarial, parametric, non-stationary, composition), isolated or compound.
-- **Capability map** over 273 perturbation configurations: robust RL leads on average but degrades as shifts intensify, and a claimed target shift does not reliably predict empirical strengths.
-- Extended the same interface to advanced robotic tasks: Unitree G1 and Franka drawer in Isaac Lab with robust safe RL, and a fine-tuned π<sub>0.5</sub> VLA policy.
 
 **Leveraging Generative Uncertainty Modeling for Distributionally Robust Offline Reinforcement Learning** &nbsp; <span style="color: var(--global-text-color-light)">· Apr 2026 – Present</span><br>
 _Johns Hopkins University — with Prof. Laixi Shi, Prof. Jianyi Yang and Jiaqi Wen_ · <span style="color: var(--global-text-color-light)">Under review</span>
