@@ -14,6 +14,7 @@ profile:
     <p>Baltimore, MD, USA</p>
     <div style="display: flex; justify-content: center; gap: 1.6em; margin-top: 0.6em; font-size: 1.3em;">
       <a href="mailto:xchen336@jh.edu" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://scholar.google.com/citations?user=0hR-BaAAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
       <a href="https://github.com/x1chenn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/xi-chen-jhucs" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
     </div>
