@@ -17,6 +17,7 @@ profile:
       <a href="https://scholar.google.com/citations?user=0hR-BaAAAAAJ&hl=en" title="Google Scholar" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a>
       <a href="https://github.com/x1chenn" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/xi-chen-jhucs" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://x.com/x1chenn" title="X" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
 
 selected_papers: false # I have no publications yet; research projects are listed in the body instead
